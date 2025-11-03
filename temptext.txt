@@ -1,0 +1,29 @@
+pawn:
+	actor:
+		walker
+		fighter
+		interact
+		speaker
+		seller
+	hazzard:
+		passible
+		hurtful
+		information
+	item:
+		weapons:
+			sword
+			bow
+			magic
+		potions:
+			healing
+			mana
+			tbd
+		armour:
+			defense 
+			ablitys:
+				damage reduction
+				tbd
+		story
+		collectable 
+		currency 
+	
