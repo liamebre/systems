@@ -24,10 +24,13 @@ func get_input_direction():
 	)
 
 func move(pos):
-	var direction = (pos - position).normalized()
+	var direction = (Vector2(pos) - position).normalized()
+	
 	var tween := create_tween()
 	tween.set_ease(Tween.EASE_IN)
-	var end = %player.position + direction * grid_size
-	tween.tween_property($player, "position", end, 1)
-	position = pos
+	var end = position + direction * grid_size
+	tween.tween_property($".", "position", end, 1)
+	
+	await tween.finished
+	position = end
 	print(pos)
