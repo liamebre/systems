@@ -25,7 +25,6 @@ func get_input_direction():
 
 func move(pos):
 	var direction = (Vector2(pos) - position).normalized()
-	
 	var tween := create_tween()
 	tween.set_ease(Tween.EASE_IN)
 	var end = position + direction * grid_size
