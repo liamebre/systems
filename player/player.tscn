@@ -6,6 +6,7 @@
 load_path = "res://.godot/imported/icon.svg-3ac787d35d8d8450e531cf7e4f7d45c6.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rkbax"]
+size = Vector2(64, 64)
 
 [node name="player" type="Area2D"]
 script = ExtResource("1_rkbax")
