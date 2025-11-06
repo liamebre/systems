@@ -32,4 +32,3 @@ func move(pos):
 	
 	await tween.finished
 	position = end
-	print(pos)
