@@ -4,8 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://bpb5agmrwhqwo" path="res://map/map.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://c7jsrhjml22qm" path="res://combat/fight.tscn" id="3_h2yge"]
 
-[node name="main" type="Node2D"]
+[node name="main" type="Node2D" node_paths=PackedStringArray("combat_screen", "exploration_screen")]
 script = ExtResource("1_ig7tw")
+combat_screen = NodePath("fight")
+exploration_screen = NodePath("map")
 
 [node name="map" parent="." instance=ExtResource("2_0xm2m")]
 
