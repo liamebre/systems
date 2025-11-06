@@ -9,4 +9,7 @@ func initialize(fights_fighters):
 			fighter.add_fighter()
 		else:
 			fighter.queue_free()
+
+func finish_combat(winner,loser):
+	fightFinished.emit(winner, loser)
 		
