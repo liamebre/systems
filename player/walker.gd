@@ -31,4 +31,3 @@ func move(pos):
 	tween.tween_property($".", "position", end, 1)
 	
 	await tween.finished
-	position = end
