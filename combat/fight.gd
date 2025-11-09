@@ -10,6 +10,7 @@ func initialize(fights_fighters):
 		else:
 			fighter.queue_free()
 	$UI.initialize()
+	$turnOrder.initialize()
 
 func finish_combat(winner,loser):
 	fightFinished.emit(winner, loser)
