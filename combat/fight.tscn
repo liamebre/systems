@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://c7jsrhjml22qm"]
+[gd_scene load_steps=11 format=4 uid="uid://c7jsrhjml22qm"]
 
 [ext_resource type="Script" uid="uid://dd6lesodw1pw8" path="res://combat/fight.gd" id="1_wmxk8"]
 [ext_resource type="Texture2D" uid="uid://cjvt32d7d0u3k" path="res://Texture/TX Tileset Stone Ground.png" id="2_k543g"]
 [ext_resource type="Texture2D" uid="uid://bjh5smaxchcrm" path="res://Texture/TX Tileset Grass.png" id="2_wmxk8"]
 [ext_resource type="Script" uid="uid://ciwkyhg447gvb" path="res://combat/turn_order.gd" id="4_01ib5"]
 [ext_resource type="Script" uid="uid://dtdssk421rsy5" path="res://combat/ui.gd" id="4_7vkx2"]
+[ext_resource type="PackedScene" uid="uid://dc2q22m76ot2u" path="res://combat/info.tscn" id="6_vfrpy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k543g"]
 texture = ExtResource("2_wmxk8")
@@ -494,7 +495,7 @@ script = SubResource("GDScript_k543g")
 [node name="turnOrder" type="Node" parent="."]
 script = ExtResource("4_01ib5")
 
-[node name="UI" type="Control" parent="."]
+[node name="UI" type="Control" parent="." node_paths=PackedStringArray("fighters_node")]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -1.0
@@ -502,6 +503,8 @@ offset_top = -1.0
 offset_right = 1151.0
 offset_bottom = 648.0
 script = ExtResource("4_7vkx2")
+fighters_node = NodePath("../fighters")
+info_scene = ExtResource("6_vfrpy")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI"]
 layout_mode = 1
