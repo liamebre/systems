@@ -22,9 +22,9 @@ ProgressBar/styles/fill = SubResource("StyleBoxFlat_jtgnr")
 [node name="info" type="PanelContainer"]
 anchors_preset = -1
 anchor_right = 0.321
-anchor_bottom = 0.33
+anchor_bottom = 0.179
 offset_right = 0.207977
-offset_bottom = -97.84
+offset_bottom = 0.00801086
 grow_horizontal = 2
 grow_vertical = 2
 

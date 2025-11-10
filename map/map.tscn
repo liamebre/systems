@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://bpb5agmrwhqwo"]
+[gd_scene load_steps=12 format=4 uid="uid://bpb5agmrwhqwo"]
 
 [ext_resource type="Texture2D" uid="uid://bjh5smaxchcrm" path="res://Texture/TX Tileset Grass.png" id="1_p5pve"]
 [ext_resource type="Script" uid="uid://cpws3y1d4n2mb" path="res://map/tilemap.gd" id="1_wijl4"]
 [ext_resource type="PackedScene" uid="uid://btb1lm6mq77ce" path="res://player/player.tscn" id="2_e0an3"]
 [ext_resource type="Texture2D" uid="uid://dxjwftxy6c828" path="res://Texture/TX Plant.png" id="2_urblq"]
 [ext_resource type="Script" uid="uid://1c3fp2dwh1l5" path="res://player/walker.gd" id="3_e0an3"]
+[ext_resource type="PackedScene" uid="uid://b71xsvfsrig0t" path="res://combat/opponent.tscn" id="6_7lyie"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p5pve"]
 texture = ExtResource("1_p5pve")
@@ -537,3 +538,6 @@ script = ExtResource("1_wijl4")
 position = Vector2(32, 30)
 script = ExtResource("3_e0an3")
 actor = ExtResource("2_e0an3")
+
+[node name="opponent" parent="playerLayer" instance=ExtResource("6_7lyie")]
+position = Vector2(520, 153)
